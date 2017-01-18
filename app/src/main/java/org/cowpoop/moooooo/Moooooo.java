@@ -12,18 +12,19 @@ public class Moooooo extends AppCompatActivity {
         setContentView(R.layout.activity_moooooo);
 
     // Example of a call to a native method
-    TextView tv = (TextView) findViewById(R.id.sample_text);
-    tv.setText(stringFromJNI());
+    TextView titleInfoText = (TextView) findViewById(R.id.textInfo);
+        titleInfoText.setText(txtInfo());
     }
 
     /**
      * A native method that is implemented by the 'native-lib' native library,
      * which is packaged with this application.
      */
-    public native String stringFromJNI();
+    public native String txtInfo();
 
     // Used to load the 'native-lib' library on application startup.
     static {
+        System.loadLibrary("global-text");
         System.loadLibrary("native-lib");
     }
 }

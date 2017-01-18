@@ -12,8 +12,27 @@
     tools:context="org.cowpoop.moooooo.Moooooo">
 
     <TextView
-        android:id="@+id/sample_text"
+        android:id="@+id/textInfo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <Button
+        android:text="Start Exploitation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="88dp" />
+
+    <CheckBox
+        android:text="Advanced Options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:id="@+id/chkAdvancedStartOptions"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
